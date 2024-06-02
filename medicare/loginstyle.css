@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.navul {
+    list-style: none;
+}
+
+.navul li {
+    display: inline-block;
+    padding: 8px 20px;
+}
+
+.navul li a {
+    transition: all 0.5s ease 0s;
+}
+
+.navul li a:hover {
+    color:teal;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: teal;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+button:hover {
+    background-color: cyan;
+}
+
+.footer {
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 10px;
+}
+
+.pfooter {
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.iglogo {
+    height: 35px;
+    width: 35px;
+    margin: 10px;
+} 
+
+.dropdown-button {
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+} 
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    z-index: 1;
+    min-width: 115px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0, 0.3);
+    border-radius: 5px;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover
+
+.dropdown-content {
+    display: block;
+}
+
+body {
+    margin:0;
+    padding:0;
+    background: white;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.center {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.center h1{
+    text-align: center;
+}
+
+.center form{
+    padding: 0px 40px;
+    box-sizing: border-box;
+}
+
+form .txt_field {
+    position: relative;
+    border-bottom: 2px solid gray;
+    margin: 30px 0px;
+}
+
+.txt_field input {
+    width: 100%;
+    padding: 0px 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: black;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: gray;
+    transition: 0.3s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+    color: teal;
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%;
+}
+
+.pass{
+    margin: -5px 0 20px 5px;
+    color: blue;
+    cursor: pointer;
+}
+
+.pass:hover {
+    text-decoration: underline;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    background: teal;
+    margin: 25px 0px;
+}
+
+input[type="submit"]:hover{
+    border-color:gray;
+    transition: 0.3s;
+    background-color: white;
+    color: teal;
+}
+
+.register_link{
+    margin: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.register_link a{
+    color: teal;
+    text-decoration: underline;
+    font-size: 14px;
+}
+

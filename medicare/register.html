@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+    <script defer src="register.js"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="icon.png" alt="logo">
+        <nav>
+            <ul class="navul">
+                <li><a href="medicare.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropdown-button">Products</a>
+                        <div class="dropdown-content">
+                          <a href="product.html">Healthcare</a>
+                          <a href="#">Cosmetic</a>
+                          <a href="#">Misc.</a>
+                        </div>
+                      </div>
+                </li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+        <a class="login" href="login.html"><button>Login</button></a>
+    <div class="center">
+        <h1>Register</h1>
+        <form method="post" id="form" onsubmit="return false">
+            <div class="txt_field">
+                <input type="text" id="user" required>
+                <span></span>
+                <label>Full Name</label>
+            </div>
+            <div class="txt_field">
+                <input type="email" id="email" required>
+                <span></span>
+                <label>Email</label>
+            </div>
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <span class ="gender-title">Gender</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Male</span>
+                    </label>
+                    <label for = "dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Female</span>
+                    </label>
+                </div>
+        </div>
+            <p>City</p>
+                <select class="select-style">
+                <option value="Jakarta">Jakarta</option>
+                <option value="Bandung">Bandung</option>
+                <option value="Meikarta">Meikarta</option>
+                <option value="BSD">BSD</option>
+                </select>
+            <div class="txt_field">
+                <input type="password" id="password" required>
+                <span></span>
+                <label>Password</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" id="password" required>
+                    <span></span>
+                    <label>Confirm Password</label>
+                    </div>
+                <input type="submit" value="Register">
+        </form>
+    </div>
+    <div class="footer">
+        <a href="https://instagram.com/evanedbert">
+        <img src="icon1.png" class="iglogo">
+        </a>
+            <p class="pfooter">Copyright 2022. Evan Edbert. All Rights Reserved.</p>
+    </div>
+</body>
+</html>
